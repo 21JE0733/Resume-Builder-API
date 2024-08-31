@@ -1,0 +1,183 @@
+#bg {
+    background-color:rgb(2, 53, 80);
+    padding: 50px;
+    position: absolute;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: url("../img/background.jpg");
+}
+
+#header {
+    color: rgb(0, 0, 0);
+    margin-left: 50%;
+}
+
+.forms {
+    box-shadow: 0 0 40px rgba(0, 0, 0, 1);
+    border-radius: var(--border-radius);
+    color: #034289; 
+    border: 1px solid black;
+    height: auto;
+    margin-left: 130px;
+}
+
+.template, .pers, .job, .career, .skill, .education, .experience, .achievement {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+.temp {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+}
+
+#template_id2, #template_id3 {
+    margin-left: 60px;
+}
+
+input[type=radio]:checked + label>img {
+    border: 5px solid #f00b0b;
+    box-shadow: 0 0 3px 3px #090;
+}
+  
+input[type=radio] + label>img {
+    border: 1px dashed #444;
+    width: 100px;
+    height: 100px;
+    transition: 500ms all;
+}
+
+#img {
+    border: 2px solid #050505;
+}
+
+.info, .edu, .exp {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+}
+
+.info input, .edu input, .exp input, .skill_1 input, .ach input {
+    border: 2px solid rgb(0, 0, 0);
+    margin-right: 20px;
+    width: 250px;
+    height: 25px;
+    margin-bottom:10px;
+    color: white;
+    background-color: rgb(75, 74, 74);
+}
+
+.job #job_title {
+    border: 2px solid black;
+    background-color: rgb(75, 74, 74);
+    width: 400px;
+    height: 30px;
+    color: white;
+}
+
+.career #car_ob, .edu #desc, .exp #res {
+    border: 2px solid black;
+    width: 700px;
+    height: 30px;
+    background-color: rgb(75, 74, 74);
+    color: white;
+}
+
+::placeholder {
+    color: rgb(255, 255, 255);
+    opacity: 0.5;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+#skill_add, #edu_add, #exp_add, #ach_add {
+    border:2px solid rgb(1, 22, 38);
+    background-color: rgb(2, 109, 116);
+    color: rgb(255, 255, 255);
+    padding: 6px 20px;
+    text-align: center;
+    text-decoration:antiquewhite;
+    display: inline-block;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+#skill_del, #edu_del, #exp_del, #ach_del {
+    background-color: #6e3f3f; 
+    border:2px solid rgb(255, 255, 255);;
+    color: rgb(255, 255, 255);
+    padding: 6px 20px;
+    text-align: center;
+    text-decoration:antiquewhite;
+    display: inline;
+    font-size: 10px; 
+    font-weight: bold;
+    margin-left: 0px;
+}
+
+.btn_submit {
+    background-color: #05a54d; 
+    border:1px solid #049143;
+    color: rgb(9, 4, 4);
+    padding: 15px 30px;
+    text-align: center;
+    display:inline-flex;
+    font-size: 15px; 
+    font-weight: bold;
+    margin-left: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px #434242;
+    margin-bottom: 100px;
+}
+
+.btn_submit:hover {
+    background-color: #adf0af
+}
+
+.btn_submit:active {
+  background-color: #3e8e41;
+  box-shadow: 0 3px #666;
+  transform: translateY(4px);
+}
+
+.spin {
+    padding-left: 2.5em;
+    display: block;
+}
+
+@keyframes spinner {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+.spin .spinner::before {
+    content: "";
+    width: 10em;
+    height: 10em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    border: dotted 10px #2f7ff7;
+    border-bottom-color: #ffffff;
+    animation: .2s linear infinite spinner;
+    transform: translate(-50%, -50%);
+    will-change: transform;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.fade {
+    filter: opacity(0.25);
+}
